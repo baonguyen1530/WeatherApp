@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <div id="container">
+    <form class="weatherForm">
+
         <div id="input_container">
-            <input type="text" id="city_input" placeholder="Enter a city...">
-            <button id="button" ></button>
+            <input type="text" class="city_input" placeholder="Enter a city...">
+            <button class="get_weather_button" onclick="get_weather_data()">Submit</button>
         </div>
-        <div id="display_container">
-            
+
+        <div class="display_container">
+            <h1 class="city_display">Miami</h1>
+            <p class="temp_display">90°</p>
+            <p class="humitidy_display">Humidity: 75%</p>
+            <p class="description_display">Clear Skies</p>
+            <p class="weather_emoji">☀️</p>
+            <p class="error_display">Please enter a city</p>
         </div>
-    </div>
+    </form>
     
 
     <script src="script.js"></script>
